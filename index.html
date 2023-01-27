@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.cdnfonts.com/css/alarm-clock" rel="stylesheet">          
+    </head>
+    <body>
+        <div class="container"
+                    onselectstart="return false;" 
+                    onmousedown="return false;">
+            <h1> WELCOME TO THE MATCH !</h1>
+            <div class="sub-container">
+                <div class = main>
+                    <div class="home">
+                        <h3>HOME</h3>
+                        <div class = "scorebox">
+                            <p id = "home-score"></p>
+                        </div>
+                        <div class = home-add-points-container>
+                            <p onclick="homeAddOne()">+1</p>
+                            <p onclick="homeAddTwo()">+2</p>
+                            <p onclick="homeAddThree()">+3</p>
+                        </div>
+                    </div>
+                    <div class="guest">
+                        <h3>GUEST</h3>
+                        <div class = "scorebox">
+                            <p id = "guest-score"></p>
+                        </div>
+                        <div class = guest-add-points-container>
+                            <p onclick="guestAddOne()">+1</p>
+                            <p onclick="guestAddTwo()">+2</p>
+                            <p onclick="guestAddThree()">+3</p>
+                        </div>       
+                    </div>  
+                </div>  
+                <div class = "leader">
+                    <p id="leading">Score is equal</p>  
+                </div>
+                <p id="timer"></p>
+            </div>        
+        </div>
+    </body> 
+    <script src="index.js"></script>
+</html>

@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+h1{
+    font-family: Verdana;
+    color:aliceblue;
+    width:fit-content;
+}
+.container{
+    height:100vh;
+    background: black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.sub-container{
+    background-color:rgba(30, 30, 138, 0.596);
+    box-shadow: rgba(161, 170, 209, 0.35) 0px 5px 15px;
+    width:80%;
+    max-width:600px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap:30px;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    border-radius:8px;
+}
+h3{
+    color: white;
+    font-family:Impact;
+    font-weight: bold;
+}
+.home-add-points-container,.guest-add-points-container{
+    display:flex;
+    gap:5px;
+    margin-top:13px;
+    border-radius: 8px;
+}
+#home-score,#guest-score{
+    background-color: black;
+    color: rgb(202, 40, 40);
+    padding: 8px;
+    font-family:'digital-clock-font',sans-serif;
+    font-size: 50px;
+    border-radius: 5px;
+    margin-top:6px;
+    opacity:0.9;
+}
+.home-add-points-container > p , .guest-add-points-container > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid white;
+    width:23px;
+    height:23px;
+    border-radius: 3px;
+    font-size:13px;
+    font-family:'digital-clock-font',sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    transition:ease-in-out 0.2s;
+}
+.home-add-points-container > p:hover, .guest-add-points-container > p:hover{
+    background-color: white;
+    opacity: 0.5;
+    color:black;
+    font-weight: bold;
+}
+.home-add-points-container > p :active, .guest-add-points-container > p :active{
+   background-color: rgb(179, 170, 170); 
+}
+#leading{
+    color:white;
+    font-family: Verdana,sans-serif;
+    font-style: italic;
+    font-size:25px;
+}
+#timer{
+    width:100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius:8px;
+    color:aliceblue;
+    font-family:'digital-clock-font';
+    font-size:25px;
+}
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./fonts/digital-7.ttf');
+}
